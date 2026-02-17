@@ -4,7 +4,7 @@
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
   padding: 94.5px 50px 94.5px 50px;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-weight: normal;
   font-size: 18px;
 }
@@ -44,7 +44,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  line-height: 24.3px;
+  line-height: 1.35;
   font-style: normal;
 }
 
@@ -67,8 +67,7 @@
 
 .overlay {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
@@ -82,7 +81,7 @@
   row-gap: 20px;
   text-transform: uppercase;
   line-height: 1.15;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 100px;
   color: white;
@@ -126,7 +125,7 @@
 }
 
 .cover__description-text {
-  word-spacing: 20px;
+  word-spacing: 19px;
   text-align: center;
   line-height: 28px;
 }
@@ -140,7 +139,6 @@
 }
 
 .lots {
-  min-height: 723px;
   padding: 0 24px 0 24px;
   margin-top: 180px;
 }
@@ -151,7 +149,6 @@
   font-weight: 700;
   line-height: 100%;
   text-transform: uppercase;
-  font-style: bold;
   padding-bottom: 32px;
 }
 
@@ -169,7 +166,8 @@
 
 .card {
   position: relative;
-
+  background-size: cover;
+  background-position: center;
   height: 100%;
   padding: 48px 40px 48px 40px;
   color: white;
@@ -180,24 +178,19 @@
 
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-size: cover;
-  background-position: center;
 }
 .card-link {
   position: relative;
   z-index: 11;
+  text-decoration: none;
 }
 
 .card__title {
@@ -205,6 +198,9 @@
   font-weight: bold;
   text-transform: uppercase;
   line-height: 120%;
+  text-decoration: underline;
+  position: relative;
+  z-index: 11;
 }
 
 .card__text {
@@ -224,7 +220,6 @@
   padding: 35px 24px 0 24px;
   margin-top: 120px;
   column-gap: 25px;
-  height: 595px;
 }
 
 .about__column {
@@ -262,23 +257,26 @@
   flex-direction: column;
   gap: 24px;
   grid-column: 2;
-  line-height: 24px;
+  line-height: 1.2;
   font-size: 20px;
   padding-top: 8px;
+}
+.paragraph {
+  padding-right: 5px;
 }
 
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr min-content;
   align-items: start;
-  gap: 100px;
+  gap: 140px;
   padding: 0 50px 0 50px;
-  min-height: 180px;
+  padding-top: 1px;
   margin-top: 180px;
 }
 .footer__address {
   justify-self: start;
-
+  font-size: 18px;
   max-width: 265px;
 }
 
@@ -291,7 +289,6 @@
   display: flex;
   gap: 48px;
   list-style: none;
-  height: 48px;
 }
 
 .logo {
@@ -301,4 +298,5 @@
 .footer__menu {
   font-size: 18px;
   line-height: 100%;
+  line-height: normal;
 }
