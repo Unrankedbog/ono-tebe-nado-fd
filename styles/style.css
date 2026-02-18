@@ -76,6 +76,7 @@
 
 .cover__title {
   display: grid;
+  position: relative;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   grid-template-rows: repeat(3, minmax(0, 1fr));
   row-gap: 20px;
@@ -89,6 +90,7 @@
   max-width: 100%;
   letter-spacing: 0.3em;
   box-sizing: border-box;
+  z-index: 11;
 }
 
 .no-letter-spacing {
@@ -113,6 +115,7 @@
 }
 
 .cover__description {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -122,6 +125,7 @@
   line-height: 28px;
   font-family: Raleway;
   text-transform: uppercase;
+  z-index: 11;
 }
 
 .cover__description-text {
@@ -260,10 +264,9 @@
   line-height: 1.2;
   font-size: 20px;
   padding-top: 8px;
-}
-.paragraph {
   padding-right: 5px;
 }
+
 
 .footer {
   display: grid;
@@ -273,6 +276,7 @@
   padding: 0 50px 0 50px;
   padding-top: 1px;
   margin-top: 180px;
+  padding-bottom: 82px;
 }
 .footer__address {
   justify-self: start;
